@@ -4,7 +4,19 @@ Template.hello.helpers = function() {
 
 Template.hello.events = {
   'click input': function() {
-    Meteor.call('delayedEcho', function(err, result) {
+
+    var docDefinition = {
+      content: [
+        'First paragraph',
+        'Another paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines',
+        'One More paragraph, this time a little bit longer to make sure, this line will be divided into at least two lines'
+      ],
+      defaultStyle: {
+        font: 'SourceSansPro'
+      }
+    };
+
+    Meteor.call('delayedEcho',docDefinition, function(err, result) {
 
       if (result) {
         window.open('data:application/pdf;base64,' + escape(result));
