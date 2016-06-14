@@ -1,0 +1,11 @@
+{
+  "name": "meteorasync",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "fibers": "^1.0.13",
+    "meteor-node-stubs": "~0.2.0"
+  }
+}
