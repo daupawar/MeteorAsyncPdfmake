@@ -11,13 +11,13 @@ Asynchronous pdf generation on server side
 ## Setup
 
 * create meteor project
-  ```meteor create meteorAsync```
+  * ```meteor create meteorAsync```
 * add pdfmake lib via npm 
-  ```npm install pdfmake```
+  * ```npm install pdfmake```
 * add Meteor Async 
-  ```meteor add meteorhacks:async```
+  * ```meteor add meteorhacks:async```
 * add file saver lib (for client side pdf download)
-   ``` meteor add pfafman:filesaver```
+   * ``` meteor add pfafman:filesaver```
 
 ## Custom font setup
 * Create public folder to root directory of project
