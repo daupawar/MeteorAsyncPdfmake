@@ -1,10 +1,10 @@
 function delayedMessge(docDefinition,callback) {
   var fonts = {
     SourceSansPro: {
-      normal: process.cwd().split('.meteor')[0] + 'public/fonts/SourceSansPro-Regular.ttf',
-      bold: process.cwd().split('.meteor')[0] + 'public/fonts/SourceSansPro-Bold.ttf',
-      italics: process.cwd().split('.meteor')[0] + 'public/fonts/SourceSansPro-It.ttf',
-      bolditalics: process.cwd().split('.meteor')[0] + 'public/fonts/SourceSansPro-BoldIt.ttf'
+      normal: Assets.absoluteFilePath('fonts/SourceSansPro-Regular.ttf'),
+      bold: Assets.absoluteFilePath('fonts/SourceSansPro-Bold.ttf'),
+      italics: Assets.absoluteFilePath('fonts/SourceSansPro-It.ttf'),
+      bolditalics: Assets.absoluteFilePath('fonts/SourceSansPro-BoldIt.ttf')
     }
   };
   var PdfPrinter = require('pdfmake/src/printer');
